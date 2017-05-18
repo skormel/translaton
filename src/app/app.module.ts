@@ -5,15 +5,20 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ButtonModule } from 'primeng/primeng';
+import { TopMenuComponent } from './shared/top-menu/top-menu.component';
+
+import { AppRoutes } from './app.routes';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TopMenuComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    AppRoutes,
     ButtonModule
   ],
   providers: [],
